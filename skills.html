@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anam Hashmat - About</title>
+  <!-- Google Fonts for typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /><style>/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Skills Grid Layout */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Skill Item */
+.skill-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Icon styling */
+.skill-icon {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Skill Title */
+.skill-title {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .skill-icon {
+    font-size: 2em;
+  }
+  .skill-title {
+    font-size: 1.2em;
+  }
+}</style>
+</head>
+<body>
+
+  <!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">My Skills & Expertise</h2>
+    <div class="skills-container">
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">💻</div>
+        <h3 class="skill-title">Web Development</h3>
+        <p>Proficient in HTML and CSS, creating responsive, user-friendly websites that effectively communicate ideas and enhance user experience.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">🐍</div>
+        <h3 class="skill-title">Python & Data Science</h3>
+        <p>Capable of building dynamic, data-driven applications, analyzing data with Excel, and deploying impactful projects in Python.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">🔧</div>
+        <h3 class="skill-title">Version Control & Collaboration</h3>
+        <p>Efficient in managing code with Git and GitHub, ensuring smooth collaboration and version control for projects.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">📊</div>
+        <h3 class="skill-title">Data Analysis & Visualization</h3>
+        <p>Expertise in Microsoft Excel for data manipulation, pivot tables, dashboards, and data modeling to organize and interpret complex information.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">🤖</div>
+        <h3 class="skill-title">AI & Vibe Coding</h3>
+        <p>Actively exploring AI concepts and Vibe coding to develop intelligent solutions and enhance web development capabilities.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
