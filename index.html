@@ -285,7 +285,292 @@ body {
   .intro {
     font-size: 1em;
   }
-}</style>
+}
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .about-text {
+    font-size: 1em;
+  }
+}
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Skills Grid Layout */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Skill Item */
+.skill-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Icon styling */
+.skill-icon {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Skill Title */
+.skill-title {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .skill-icon {
+    font-size: 2em;
+  }
+  .skill-title {
+    font-size: 1.2em;
+  }
+}
+/* Projects Section */
+.projects-section {
+  background-color: #fefefe;
+  padding: 50px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.logo-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.project-description {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.project-link {
+  display: inline-block;
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #3498db;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .logo-icon {
+    font-size: 2.5em;
+  }
+  .project-title {
+    font-size: 1.2em;
+  }
+  .project-description {
+    font-size: 0.95em;
+  }
+}
+/* Contact Section Styles */
+.contact-section {
+  background-color: #fefefe;
+  padding: 50px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-item:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 2.5em;
+  margin-right: 15px;
+}
+
+.details h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.contact-link {
+  font-size: 1em;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .icon {
+    font-size: 2em;
+  }
+  .details h3 {
+    font-size: 1.1em;
+  }
+</style>
 </head>
 <body>
 
@@ -314,6 +599,156 @@ body {
       <!-- <a href="#about" class="btn-primary">Learn More</a> -->
     </div>
   </section>
+ <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        Hello! I'm <strong>Anam Hashmat</strong>, a passionate web developer and data enthusiast dedicated to harnessing the power of AI to create innovative solutions. With a strong foundation in HTML and CSS, I design visually appealing and responsive websites that effectively communicate complex ideas. My expertise extends to Python, enabling me to develop dynamic, data-driven applications and deploy impactful projects. I am proficient in managing code with Git and GitHub, ensuring seamless collaboration and version control. Additionally, I possess advanced skills in Microsoft Excel, including data analysis, pivot tables, visualization, and building insightful dashboards. My ongoing exploration of AI and data science fuels my drive to develop intelligent, efficient, and user-centered web solutions that bridge the gap between data and user experience.
+      </p>
+    </div>
+  </section>
+   <!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">My Skills & Expertise</h2>
+    <div class="skills-container">
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">💻</div>
+        <h3 class="skill-title">Web Development</h3>
+        <p>Proficient in HTML and CSS, creating responsive, user-friendly websites that effectively communicate ideas and enhance user experience.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">🐍</div>
+        <h3 class="skill-title">Python & Data Science</h3>
+        <p>Capable of building dynamic, data-driven applications, analyzing data with Excel, and deploying impactful projects in Python.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">🔧</div>
+        <h3 class="skill-title">Version Control & Collaboration</h3>
+        <p>Efficient in managing code with Git and GitHub, ensuring smooth collaboration and version control for projects.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">📊</div>
+        <h3 class="skill-title">Data Analysis & Visualization</h3>
+        <p>Expertise in Microsoft Excel for data manipulation, pivot tables, dashboards, and data modeling to organize and interpret complex information.</p>
+      </div>
+      
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <div class="skill-icon">🤖</div>
+        <h3 class="skill-title">AI & Vibe Coding</h3>
+        <p>Actively exploring AI concepts and Vibe coding to develop intelligent solutions and enhance web development capabilities.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+ <!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="logo-icon">🌱</div>
+        <h3 class="project-title">Fertilizer Management System</h3>
+        <p class="project-description">
+          Manage fertilizer company operations, inventory, and sales efficiently.
+        </p>
+        <a href="https://github.com/AnamHashmat/Fertilizer-company-management-system" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="logo-icon">☕</div>
+        <h3 class="project-title">Daily Brew</h3>
+        <p class="project-description">
+          Coffee shop order and inventory management system for daily operations.
+        </p>
+        <a href="https://github.com/AnamHashmat/daily-brew" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="logo-icon">🎬</div>
+        <h3 class="project-title">Movie Booking System</h3>
+        <p class="project-description">
+          Online platform for booking movie tickets with seat selection.
+        </p>
+        <a href="https://github.com/AnamHashmat/Movie_Booking_system" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <div class="logo-icon">💪</div>
+        <h3 class="project-title">Health & Fitness Tracker</h3>
+        <p class="project-description">
+          Log and analyze health data for personal fitness progress tracking.
+        </p>
+        <a href="https://github.com/AnamHashmat/Health-and-Fitness-Tracker" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-info">
+      
+      <!-- Phone -->
+      <div class="contact-item">
+        <div class="icon">📞</div>
+        <div class="details">
+          <h3>Phone</h3>
+          <a href="tel:03022023178" class="contact-link">03022023178</a>
+        </div>
+      </div>
+      
+      <!-- WhatsApp -->
+      <div class="contact-item">
+        <div class="icon">💬</div>
+        <div class="details">
+          <h3>WhatsApp</h3>
+          <a href="https://wa.me/923022023178" target="_blank" class="contact-link">Chat on WhatsApp</a>
+        </div>
+      </div>
+      
+      
+      
+      <!-- LinkedIn -->
+      <div class="contact-item">
+        <div class="icon">🔗</div>
+        <div class="details">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/anam-hashmat-6704752b8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVAMQjrZwRw6Mtz1pdoqeIQ%3D%3D" target="_blank" class="contact-link">My LinkedIn Profile</a>
+        </div>
+      </div>
+      
+      <!-- Email -->
+      <div class="contact-item">
+        <div class="icon">✉️</div>
+        <div class="details">
+          <h3>Email</h3>
+          <a href="mailto:anamhashmat77@gmail.com" class="contact-link">anamhashmat77@gmail.com</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
   
 </body>
