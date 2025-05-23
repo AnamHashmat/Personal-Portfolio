@@ -178,6 +178,113 @@ footer {
   .nav-links {
     width: 200px;
   }
+  
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Container for consistent layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0,0,0,0.2);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.name {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.intro {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Optional Button Style
+.btn-primary {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #764ba2;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #eee;
+  color: #333;
+}
+*/
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .name {
+    font-size: 2em;
+  }
+  .tagline {
+    font-size: 1.2em;
+  }
+  .intro {
+    font-size: 1em;
+  }
 }</style>
 </head>
 <body>
@@ -195,6 +302,18 @@ footer {
       </ul>
     </div>
   </nav>
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1 class="name">Hi, I'm Anam Hashmat</h1>
+      <p class="tagline">Web Developer | Data Enthusiast | AI Explorer</p>
+      <p class="intro">
+         a passionate web developer and data enthusiast dedicated to exploring and integrating cutting-edge AI concepts into innovative web solutions. With a solid foundation in HTML and CSS, I craft visually appealing, user-friendly websites that effectively communicate complex ideas. My technical expertise extends to Python programming, enabling me to build dynamic, data-driven applications and deploy impactful projects. I am proficient in managing code efficiently using Git and GitHub, ensuring seamless collaboration and version control. Additionally, I possess strong skills in Microsoft Office Suite, particularly in Excel — specializing in data analysis, manipulation, creating insightful dashboards, and structuring data with effective modeling techniques. My ongoing exploration of AI and data science fuels my passion for developing intelligent, efficient solutions that bridge the gap between data and user experience.
+      </p>
+      <!-- Optional: Add a CTA button -->
+      <!-- <a href="#about" class="btn-primary">Learn More</a> -->
+    </div>
+  </section>
 
   
 </body>
