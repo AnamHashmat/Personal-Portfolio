@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anam Hashmat - About</title>
+  <!-- Google Fonts for typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /><style>/* Contact Section Styles */
+.contact-section {
+  background-color: #fefefe;
+  padding: 50px 20px;
+}
 
+.section-title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-item:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 2.5em;
+  margin-right: 15px;
+}
+
+.details h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.contact-link {
+  font-size: 1em;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .icon {
+    font-size: 2em;
+  }
+  .details h3 {
+    font-size: 1.1em;
+  }
+}</style>
+</head>
+<body>
+
+ <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-info">
+      
+      <!-- Phone -->
+      <div class="contact-item">
+        <div class="icon">📞</div>
+        <div class="details">
+          <h3>Phone</h3>
+          <a href="tel:03022023178" class="contact-link">03022023178</a>
+        </div>
+      </div>
+      
+      <!-- WhatsApp -->
+      <div class="contact-item">
+        <div class="icon">💬</div>
+        <div class="details">
+          <h3>WhatsApp</h3>
+          <a href="https://wa.me/923022023178" target="_blank" class="contact-link">Chat on WhatsApp</a>
+        </div>
+      </div>
+      
+      
+      
+      <!-- LinkedIn -->
+      <div class="contact-item">
+        <div class="icon">🔗</div>
+        <div class="details">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/anam-hashmat-6704752b8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVAMQjrZwRw6Mtz1pdoqeIQ%3D%3D" target="_blank" class="contact-link">My LinkedIn Profile</a>
+        </div>
+      </div>
+      
+      <!-- Email -->
+      <div class="contact-item">
+        <div class="icon">✉️</div>
+        <div class="details">
+          <h3>Email</h3>
+          <a href="mailto:anamhashmat77@gmail.com" class="contact-link">anamhashmat77@gmail.com</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+</body>
+</html>
