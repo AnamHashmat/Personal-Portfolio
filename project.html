@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anam Hashmat - About</title>
+  <!-- Google Fonts for typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /><style>/* Projects Section */
+.projects-section {
+  background-color: #fefefe;
+  padding: 50px 20px;
+}
 
+.section-title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.logo-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.project-description {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.project-link {
+  display: inline-block;
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #3498db;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .logo-icon {
+    font-size: 2.5em;
+  }
+  .project-title {
+    font-size: 1.2em;
+  }
+  .project-description {
+    font-size: 0.95em;
+  }
+}</style>
+</head>
+<body>
+
+ <!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="logo-icon">🌱</div>
+        <h3 class="project-title">Fertilizer Management System</h3>
+        <p class="project-description">
+          Manage fertilizer company operations, inventory, and sales efficiently.
+        </p>
+        <a href="https://github.com/AnamHashmat/Fertilizer-company-management-system" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="logo-icon">☕</div>
+        <h3 class="project-title">Daily Brew</h3>
+        <p class="project-description">
+          Coffee shop order and inventory management system for daily operations.
+        </p>
+        <a href="https://github.com/AnamHashmat/daily-brew" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="logo-icon">🎬</div>
+        <h3 class="project-title">Movie Booking System</h3>
+        <p class="project-description">
+          Online platform for booking movie tickets with seat selection.
+        </p>
+        <a href="https://github.com/AnamHashmat/Movie_Booking_system" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <div class="logo-icon">💪</div>
+        <h3 class="project-title">Health & Fitness Tracker</h3>
+        <p class="project-description">
+          Log and analyze health data for personal fitness progress tracking.
+        </p>
+        <a href="https://github.com/AnamHashmat/Health-and-Fitness-Tracker" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+</body>
+</html>
