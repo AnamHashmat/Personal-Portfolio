@@ -1,1 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anam Hashmat - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full bg-white shadow-sm z-50 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
+            <a href="#" class="text-2xl font-bold text-indigo-700">Anam Hashmat</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 font-medium">Home</a>
+                <a href="#about" class="nav-link text-gray-700 font-medium">About</a>
+                <a href="#skills" class="nav-link text-gray-700 font-medium">Skills</a>
+                <a href="#projects" class="nav-link text-gray-700 font-medium">Projects</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Skills</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Projects</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="section-padding pt-24 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                Hello, I'm <span class="text-yellow-300">Anam Hashmat</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up">
+                A passionate Web Developer actively exploring and integrating AI concepts to enhance existing web development and technical skills. I build dynamic and responsive web experiences while continuously pushing the boundaries with innovative technologies.
+            </p>
+            <a href="#projects" class="btn-primary inline-block animate-fade-in-up-delay">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-indigo-700">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/A78BFA/ffffff?text=Anam+Hashmat" alt="Anam Hashmat Profile" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-lg leading-relaxed">
+                    <p class="mb-4">
+                        My journey in technology is driven by a deep curiosity and a commitment to continuous learning. I am Anam Hashmat, a dedicated web developer with a solid foundation in creating robust and user-friendly web applications. My expertise spans across front-end development, ensuring seamless user experiences, and back-end logic, building efficient and scalable systems.
+                    </p>
+                    <p class="mb-4">
+                        Currently, my primary learning focus revolves around the exciting intersection of Artificial Intelligence and web development. I am actively exploring how AI concepts can be integrated to create more intelligent, personalized, and efficient web solutions, pushing the boundaries of what's possible. This involves delving into machine learning fundamentals, natural language processing, and data-driven applications.
+                    </p>
+                    <p>
+                        I believe in the power of technology to solve real-world problems and am always eager to take on new challenges that allow me to grow and contribute meaningfully.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-white text-gray-800">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-indigo-700">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-code text-5xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Web Development Fundamentals</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-laptop-code text-5xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Programming & Tools</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Python</li>
+                        <li>Git & GitHub</li>
+                        <li>Vibe Coding Exposure</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-chart-bar text-5xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Data Analysis & Productivity</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                        <li>Advanced Excel (Data Analysis, Formulas, Pivot Tables, Visualization)</li>
+                        <li>Data Dashboard Creation</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md text-center sm:col-span-2 lg:col-span-1 lg:col-start-2">
+                    <i class="fas fa-brain text-5xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Learning Focus</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>AI Concepts Integration</li>
+                        <li>Enhancing Web Development with AI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-4 md:px-8 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-indigo-700">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="project-card">
+                    <img src="https://placehold.co/700x400/6366F1/ffffff?text=Fertilizer+Management" alt="Fertilizer Company Management System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-800">Fertilizer Company Management System</h3>
+                        <p class="text-gray-700 mb-4">
+                            A comprehensive system designed to streamline operations for a fertilizer company, managing inventory, sales, and customer data efficiently.
+                        </p>
+                        <a href="https://github.com/AnamHashmat/Fertilizer-company-management-system" target="_blank" class="btn-primary text-sm inline-flex items-center">
+                            View Project <i class="fab fa-github ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/700x400/6366F1/ffffff?text=Daily+Brew" alt="Daily Brew" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-800">Daily Brew</h3>
+                        <p class="text-gray-700 mb-4">
+                            A delightful web application for coffee enthusiasts, allowing users to explore different coffee recipes, track their favorites, and discover new brews.
+                        </p>
+                        <a href="https://github.com/AnamHashmat/daily-brew" target="_blank" class="btn-primary text-sm inline-flex items-center">
+                            View Project <i class="fab fa-github ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/700x400/6366F1/ffffff?text=Movie+Booking" alt="Movie Booking System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-800">Movie Booking System</h3>
+                        <p class="text-gray-700 mb-4">
+                            An intuitive platform for browsing movies, checking showtimes, and booking tickets seamlessly, enhancing the cinema-going experience.
+                        </p>
+                        <a href="https://github.com/AnamHashmat/Movie_Booking_system" target="_blank" class="btn-primary text-sm inline-flex items-center">
+                            View Project <i class="fab fa-github ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/700x400/6366F1/ffffff?text=Fitness+Tracker" alt="Health and Fitness Tracker" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-800">Health and Fitness Tracker</h3>
+                        <p class="text-gray-700 mb-4">
+                            A personal health companion designed to help users track their fitness goals, monitor progress, and maintain a healthy lifestyle.
+                        </p>
+                        <a href="https://github.com/AnamHashmat/Health-and-Fitness-Tracker" target="_blank" class="btn-primary text-sm inline-flex items-center">
+                            View Project <i class="fab fa-github ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Get in Touch</h2>
+            <p class="text-lg mb-8 opacity-90">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-800">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt text-indigo-600 text-2xl mr-4"></i>
+                    <a href="tel:+923022023178" class="text-lg font-medium">+92 302 2023178</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp text-green-500 text-2xl mr-4"></i>
+                    <a href="https://wa.me/923022023178" target="_blank" class="text-lg font-medium">WhatsApp</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope text-red-500 text-2xl mr-4"></i>
+                    <a href="mailto:anamhashmat77@gmail.com" class="text-lg font-medium">anamhashmat77@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin text-blue-700 text-2xl mr-4"></i>
+                    <a href="https://www.linkedin.com/in/anam-hashmat-6704752b8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVAMQjrZwRw6Mtz1pdoqeIQ%3D%3D" target="_blank" class="text-lg font-medium">LinkedIn</a>
+                </div>
+                <div class="contact-item md:col-span-2">
+                    <i class="fab fa-facebook-square text-blue-600 text-2xl mr-4"></i>
+                    <a href="https://www.facebook.com/share/1HtVT75ash/?mibextid=qi2Omg" target="_blank" class="text-lg font-medium">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4 md:px-8">
+            <p>&copy; 2025 Anam Hashmat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
