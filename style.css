@@ -1,1 +1,66 @@
+/* Custom styles for smooth scrolling and font */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #f8fafc; /* Light blue-gray background */
+    color: #334155; /* Darker text */
+}
+.section-padding {
+    padding: 4rem 1rem; /* Default padding for sections */
+}
+@media (min-width: 768px) {
+    .section-padding {
+        padding: 6rem 4rem; /* Larger padding on medium screens and up */
+    }
+}
+.nav-link:hover {
+    color: #4f46e5; /* Indigo 600 on hover */
+}
+.btn-primary {
+    /* These are Tailwind's @apply directives, they will be processed by Tailwind CLI */
+    /* If you are not using Tailwind CLI, you might need to manually write these styles */
+    /* For direct browser use with CDN, these will be handled by Tailwind's JIT compiler */
+    background-color: #4f46e5; /* indigo-600 */
+    color: white;
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* ease-in-out */
+}
+.btn-primary:hover {
+    background-color: #4338ca; /* indigo-700 */
+}
+.project-card {
+    background-color: white;
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    overflow: hidden;
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* ease-in-out */
+}
+.project-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem; /* p-4 */
+    background-color: white;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* ease-in-out */
+}
+.contact-item:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+}
 
